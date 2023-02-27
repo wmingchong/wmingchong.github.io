@@ -1,9 +1,27 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "严于律己 宽以待人",
+    "subtitle": "没有什么事情是一蹴而就的，坚持不懈才能取得成功",
+    "icon": "https://wmingchong.github.io/images/favicon.ico",
     "description": "",
     "home_page_url": "https://wmingchong.github.io",
     "items": [
+        {
+            "id": "https://wmingchong.github.io/2023/02/27/BigData/java%E5%9F%BA%E7%A1%80/",
+            "url": "https://wmingchong.github.io/2023/02/27/BigData/java%E5%9F%BA%E7%A1%80/",
+            "title": "",
+            "date_published": "2023-02-27T07:29:01.550Z",
+            "content_html": "<h1 id=\"java基础语法\"><a class=\"anchor\" href=\"#java基础语法\">#</a> java 基础语法</h1>\n<h2 id=\"注释\"><a class=\"anchor\" href=\"#注释\">#</a> 注释</h2>\n<p>Java 中的注释有三种：单行注释，多行注释，文档注释</p>\n<p><figure class=\"highlight java\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"comment\">//单行注释</span></span><br><span class=\"line\"></span><br><span class=\"line\"><span class=\"comment\">/*</span></span><br><span class=\"line\"><span class=\"comment\">多行注释</span></span><br><span class=\"line\"><span class=\"comment\">多行注释</span></span><br><span class=\"line\"><span class=\"comment\">*/</span></span><br><span class=\"line\"></span><br><span class=\"line\"><span class=\"comment\">/**</span></span><br><span class=\"line\"><span class=\"comment\">文档注释</span></span><br><span class=\"line\"><span class=\"comment\">*/</span></span><br></pre></td></tr></table></figure></p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://wmingchong.github.io/2023/02/27/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/",
+            "url": "https://wmingchong.github.io/2023/02/27/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/",
+            "title": "",
+            "date_published": "2023-02-27T07:28:54.877Z",
+            "content_html": "<h1 id=\"计算机基础\"><a class=\"anchor\" href=\"#计算机基础\">#</a> 计算机基础</h1>\n<h2 id=\"什么是计算机\"><a class=\"anchor\" href=\"#什么是计算机\">#</a> 什么是计算机</h2>\n<ul>\n<li>Computer：全称电子计算机，俗称电脑</li>\n<li>能够按照程序运行，自动，高速处理海量数据的现代化智能电子设备</li>\n<li>由硬件和软件组成</li>\n<li>常见的有台式计算机，笔记本计算机，大型计算机</li>\n<li>广泛应用在：科学计算，数据处理，自动控制，计算机辅助设计，人工智能，网络等领域。</li>\n</ul>\n<h2 id=\"计算机硬件\"><a class=\"anchor\" href=\"#计算机硬件\">#</a> 计算机硬件</h2>\n<ul>\n<li>\n<p>一些物理装置按照系统结构的要求构成一个有机整体为计算机软件提供物质基础</p>\n</li>\n<li>\n<p>计算机硬件组成：CPU、主板、内存、电源、主机箱、硬盘、显卡、键盘、鼠标、显示器等。</p>\n</li>\n<li>\n<p>CPU：是计算机中负责读取指令、对指令译码，并执行指令的核心部件。</p>\n</li>\n<li>\n<p>显卡：显卡是计算机最基本、最重要的配件之一，是数模信号转换的设备，承担着输出和显示图形的任务。</p>\n</li>\n<li>\n<p>硬盘：是计算机最主要的存储设备。</p>\n</li>\n</ul>\n",
+            "tags": []
+        },
         {
             "id": "https://wmingchong.github.io/2023/02/24/BigData/hello-world/",
             "url": "https://wmingchong.github.io/2023/02/24/BigData/hello-world/",
