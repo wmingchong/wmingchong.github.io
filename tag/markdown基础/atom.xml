@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wmingchong.github.io</id>
+    <title>严于律己 宽以待人 • Posts by &#34;markdown基础&#34; tag</title>
+    <link href="https://wmingchong.github.io" />
+    <updated>2022-12-24T04:10:45.000Z</updated>
+    <category term="Java基础" />
+    <category term="MarkDown基础" />
+    <category term="嗷嗷" />
+    <category term="哈哈" />
+    <category term="计算机基础" />
+    <entry>
+        <id>https://wmingchong.github.io/2022/12/24/jichu/MarkDown/</id>
+        <title>Markdown使用指南</title>
+        <link rel="alternate" href="https://wmingchong.github.io/2022/12/24/jichu/MarkDown/"/>
+        <content type="html">&lt;h1 id=&#34;markdown学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown学习&#34;&gt;#&lt;/a&gt; MarkDown 学习&lt;/h1&gt;
+&lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
+&lt;h3 id=&#34;三级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三级标题&#34;&gt;#&lt;/a&gt; 三级标题&lt;/h3&gt;
+&lt;h4 id=&#34;四级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四级标题&#34;&gt;#&lt;/a&gt; 四级标题&lt;/h4&gt;
+&lt;p&gt;层级标题的快捷方式由  &lt;strong&gt;#+ 空格 + 标题名称&lt;/strong&gt;  表示，回车键显示。&lt;/p&gt;
+&lt;p&gt;一级标题用一个 &lt;strong&gt;#&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;二级标题用两个 &lt;strong&gt;##&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以此类推，Typora 最高只能由六个层级标题&lt;/p&gt;
+&lt;h2 id=&#34;字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字体&#34;&gt;#&lt;/a&gt; 字体&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;严于律己，宽以待人 **&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;严于律己，宽以待人&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;严于律己，宽以待人&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;严于律己，宽以待人&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;在两端加上 * 号，用一个 ***** 表示斜体；两个  ****** 表示黑体；三个 ******* 表示黑体和斜体的组合。&lt;/p&gt;
+&lt;p&gt;在两端加上两个 &lt;strong&gt;~~&lt;/strong&gt; 表示删除线&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好好学习，天天向上&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用英文状态的  &lt;strong&gt;&amp;gt;+ 空格&lt;/strong&gt;  表示&lt;/p&gt;
+&lt;h2 id=&#34;分割线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分割线&#34;&gt;#&lt;/a&gt; 分割线&lt;/h2&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;分割线有两种表示方式&lt;/p&gt;
+&lt;p&gt;用三个 &lt;strong&gt;—&lt;/strong&gt; 回车表示；用三个 ******* 回车表示&lt;/p&gt;
+&lt;h2 id=&#34;图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h2&gt;
+&lt;p&gt;![图片 1](C:\Users\HP\Pictures\Saved Pictures\1.jpg)&lt;/p&gt;
+&lt;p&gt;图片用  **![图片名] (图片路径) ** 来表示&lt;/p&gt;
+&lt;h2 id=&#34;超链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#超链接&#34;&gt;#&lt;/a&gt; 超链接&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;www.baidu.com&#34;&gt;点击跳转到百度&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;超链接用 &lt;strong&gt;[文字] (超链接地址)&lt;/strong&gt;  表示&lt;/p&gt;
+&lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;好好&lt;/li&gt;
+&lt;li&gt;学习&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;天天&lt;/li&gt;
+&lt;li&gt;向上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表用  &lt;strong&gt;1. + 空格&lt;/strong&gt; 表示&lt;/p&gt;
+&lt;p&gt;无序列表用   &lt;strong&gt;- + 空格&lt;/strong&gt; 表示&lt;/p&gt;
+&lt;h2 id=&#34;表格&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表格&#34;&gt;#&lt;/a&gt; 表格&lt;/h2&gt;
+&lt;p&gt;名字 | 性别 | 年龄&lt;/p&gt;
+&lt;p&gt;–|--|–|&lt;/p&gt;
+&lt;p&gt;张三 | 男 | 12&lt;/p&gt;
+&lt;p&gt;在源代码模式中将空格删除，退出源代码模式即可&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名字&lt;/th&gt;
+&lt;th&gt;性别&lt;/th&gt;
+&lt;th&gt;年龄&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;张三&lt;/td&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Hello&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;代码写法由  &lt;strong&gt;```&lt;/strong&gt;  回车表示，也可以加上代码类型再回车。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;bWFpbHRvOmdpdEBnaXRodWIuY29t&#34;&gt;git@github.com&lt;/span&gt;:wmingchong/wmignchong.github.io.git&lt;/p&gt;
+</content>
+        <category term="MarkDown基础" />
+        <updated>2022-12-24T04:10:45.000Z</updated>
+    </entry>
+</feed>

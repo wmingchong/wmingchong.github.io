@@ -1,17 +1,44 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>blog-w</title>
+        <title>严于律己 宽以待人</title>
         <link>https://wmingchong.github.io</link>
-        <description>没有什么事情是一蹴而就的，坚持不懈才能取得成功</description>
+        <description></description>
         <language>zh-CN</language>
-        <pubDate>Sat, 18 Mar 2023 11:52:13 +0800</pubDate>
-        <lastBuildDate>Sat, 18 Mar 2023 11:52:13 +0800</lastBuildDate>
+        <pubDate>Thu, 23 Feb 2023 12:10:23 +0800</pubDate>
+        <lastBuildDate>Thu, 23 Feb 2023 12:10:23 +0800</lastBuildDate>
+        <category>Java基础</category>
+        <category>MarkDown基础</category>
+        <category>嗷嗷</category>
+        <category>哈哈</category>
+        <category>计算机基础</category>
         <item>
-            <guid isPermalink="true">https://wmingchong.github.io/2023/03/18/jichu/java%E5%9F%BA%E7%A1%80/</guid>
-            <title></title>
-            <link>https://wmingchong.github.io/2023/03/18/jichu/java%E5%9F%BA%E7%A1%80/</link>
-            <pubDate>Sat, 18 Mar 2023 11:52:13 +0800</pubDate>
+            <guid isPermalink="true">https://wmingchong.github.io/2023/02/23/qita/hello-world/</guid>
+            <title>其他</title>
+            <link>https://wmingchong.github.io/2023/02/23/qita/hello-world/</link>
+            <category>嗷嗷</category>
+            <pubDate>Thu, 23 Feb 2023 12:10:23 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://wmingchong.github.io/2023/02/23/BigData/java%E5%9F%BA%E7%A1%80/</guid>
+            <title>Java基础语法</title>
+            <link>https://wmingchong.github.io/2023/02/23/BigData/java%E5%9F%BA%E7%A1%80/</link>
+            <category>Java基础</category>
+            <pubDate>Thu, 23 Feb 2023 12:10:23 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;java基础语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java基础语法&#34;&gt;#&lt;/a&gt; java 基础语法&lt;/h1&gt;
 &lt;h2 id=&#34;注释&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h2&gt;
 &lt;p&gt;Java 中的注释有三种：单行注释，多行注释，文档注释&lt;/p&gt;
@@ -19,10 +46,113 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://wmingchong.github.io/2023/03/18/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
-            <title></title>
-            <link>https://wmingchong.github.io/2023/03/18/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-            <pubDate>Sat, 18 Mar 2023 11:52:13 +0800</pubDate>
+            <guid isPermalink="true">https://wmingchong.github.io/2023/02/21/suibi/hello-world/</guid>
+            <title>随笔</title>
+            <link>https://wmingchong.github.io/2023/02/21/suibi/hello-world/</link>
+            <category>哈哈</category>
+            <pubDate>Tue, 21 Feb 2023 10:12:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://wmingchong.github.io/2022/12/24/jichu/MarkDown/</guid>
+            <title>Markdown使用指南</title>
+            <link>https://wmingchong.github.io/2022/12/24/jichu/MarkDown/</link>
+            <category>MarkDown基础</category>
+            <pubDate>Sat, 24 Dec 2022 12:10:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;markdown学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown学习&#34;&gt;#&lt;/a&gt; MarkDown 学习&lt;/h1&gt;
+&lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
+&lt;h3 id=&#34;三级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三级标题&#34;&gt;#&lt;/a&gt; 三级标题&lt;/h3&gt;
+&lt;h4 id=&#34;四级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四级标题&#34;&gt;#&lt;/a&gt; 四级标题&lt;/h4&gt;
+&lt;p&gt;层级标题的快捷方式由  &lt;strong&gt;#+ 空格 + 标题名称&lt;/strong&gt;  表示，回车键显示。&lt;/p&gt;
+&lt;p&gt;一级标题用一个 &lt;strong&gt;#&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;二级标题用两个 &lt;strong&gt;##&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以此类推，Typora 最高只能由六个层级标题&lt;/p&gt;
+&lt;h2 id=&#34;字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字体&#34;&gt;#&lt;/a&gt; 字体&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;严于律己，宽以待人 **&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;严于律己，宽以待人&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;严于律己，宽以待人&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;严于律己，宽以待人&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;在两端加上 * 号，用一个 ***** 表示斜体；两个  ****** 表示黑体；三个 ******* 表示黑体和斜体的组合。&lt;/p&gt;
+&lt;p&gt;在两端加上两个 &lt;strong&gt;~~&lt;/strong&gt; 表示删除线&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好好学习，天天向上&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用英文状态的  &lt;strong&gt;&amp;gt;+ 空格&lt;/strong&gt;  表示&lt;/p&gt;
+&lt;h2 id=&#34;分割线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分割线&#34;&gt;#&lt;/a&gt; 分割线&lt;/h2&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;p&gt;分割线有两种表示方式&lt;/p&gt;
+&lt;p&gt;用三个 &lt;strong&gt;—&lt;/strong&gt; 回车表示；用三个 ******* 回车表示&lt;/p&gt;
+&lt;h2 id=&#34;图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h2&gt;
+&lt;p&gt;![图片 1](C:\Users\HP\Pictures\Saved Pictures\1.jpg)&lt;/p&gt;
+&lt;p&gt;图片用  **![图片名] (图片路径) ** 来表示&lt;/p&gt;
+&lt;h2 id=&#34;超链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#超链接&#34;&gt;#&lt;/a&gt; 超链接&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;www.baidu.com&#34;&gt;点击跳转到百度&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;超链接用 &lt;strong&gt;[文字] (超链接地址)&lt;/strong&gt;  表示&lt;/p&gt;
+&lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;好好&lt;/li&gt;
+&lt;li&gt;学习&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;天天&lt;/li&gt;
+&lt;li&gt;向上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表用  &lt;strong&gt;1. + 空格&lt;/strong&gt; 表示&lt;/p&gt;
+&lt;p&gt;无序列表用   &lt;strong&gt;- + 空格&lt;/strong&gt; 表示&lt;/p&gt;
+&lt;h2 id=&#34;表格&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表格&#34;&gt;#&lt;/a&gt; 表格&lt;/h2&gt;
+&lt;p&gt;名字 | 性别 | 年龄&lt;/p&gt;
+&lt;p&gt;–|--|–|&lt;/p&gt;
+&lt;p&gt;张三 | 男 | 12&lt;/p&gt;
+&lt;p&gt;在源代码模式中将空格删除，退出源代码模式即可&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名字&lt;/th&gt;
+&lt;th&gt;性别&lt;/th&gt;
+&lt;th&gt;年龄&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;张三&lt;/td&gt;
+&lt;td&gt;男&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Hello&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;代码写法由  &lt;strong&gt;```&lt;/strong&gt;  回车表示，也可以加上代码类型再回车。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;bWFpbHRvOmdpdEBnaXRodWIuY29t&#34;&gt;git@github.com&lt;/span&gt;:wmingchong/wmignchong.github.io.git&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+            <title>计算机基础</title>
+            <link>https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+            <category>计算机基础</category>
+            <pubDate>Thu, 24 Nov 2022 10:09:39 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;计算机基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算机基础&#34;&gt;#&lt;/a&gt; 计算机基础&lt;/h1&gt;
 &lt;h2 id=&#34;什么是计算机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是计算机&#34;&gt;#&lt;/a&gt; 什么是计算机&lt;/h2&gt;
 &lt;ul&gt;
@@ -50,59 +180,6 @@
 &lt;p&gt;硬盘：是计算机最主要的存储设备。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://wmingchong.github.io/2023/02/27/suibi/hello-world/</guid>
-            <title>Hello World</title>
-            <link>https://wmingchong.github.io/2023/02/27/suibi/hello-world/</link>
-            <pubDate>Mon, 27 Feb 2023 16:07:40 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://wmingchong.github.io/2023/02/27/qita/hello-world/</guid>
-            <title>Hello World</title>
-            <link>https://wmingchong.github.io/2023/02/27/qita/hello-world/</link>
-            <pubDate>Mon, 27 Feb 2023 16:07:36 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://wmingchong.github.io/2023/02/27/BigData/java%E5%9F%BA%E7%A1%80/</guid>
-            <title></title>
-            <link>https://wmingchong.github.io/2023/02/27/BigData/java%E5%9F%BA%E7%A1%80/</link>
-            <pubDate>Mon, 27 Feb 2023 15:29:01 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;java基础语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java基础语法&#34;&gt;#&lt;/a&gt; java 基础语法&lt;/h1&gt;
-&lt;h2 id=&#34;注释&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h2&gt;
-&lt;p&gt;Java 中的注释有三种：单行注释，多行注释，文档注释&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//单行注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;多行注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;多行注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;文档注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
     </channel>

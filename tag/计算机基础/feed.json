@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "严于律己 宽以待人 • All posts by \"计算机基础\" tag",
+    "description": "",
+    "home_page_url": "https://wmingchong.github.io",
+    "items": [
+        {
+            "id": "https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/",
+            "url": "https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/",
+            "title": "计算机基础",
+            "date_published": "2022-11-24T02:09:39.000Z",
+            "content_html": "<h1 id=\"计算机基础\"><a class=\"markdownIt-Anchor\" href=\"#计算机基础\">#</a> 计算机基础</h1>\n<h2 id=\"什么是计算机\"><a class=\"markdownIt-Anchor\" href=\"#什么是计算机\">#</a> 什么是计算机</h2>\n<ul>\n<li>Computer：全称电子计算机，俗称电脑</li>\n<li>能够按照程序运行，自动，高速处理海量数据的现代化智能电子设备</li>\n<li>由硬件和软件组成</li>\n<li>常见的有台式计算机，笔记本计算机，大型计算机</li>\n<li>广泛应用在：科学计算，数据处理，自动控制，计算机辅助设计，人工智能，网络等领域。</li>\n</ul>\n<h2 id=\"计算机硬件\"><a class=\"markdownIt-Anchor\" href=\"#计算机硬件\">#</a> 计算机硬件</h2>\n<ul>\n<li>\n<p>一些物理装置按照系统结构的要求构成一个有机整体为计算机软件提供物质基础</p>\n</li>\n<li>\n<p>计算机硬件组成：CPU、主板、内存、电源、主机箱、硬盘、显卡、键盘、鼠标、显示器等。</p>\n</li>\n<li>\n<p>CPU：是计算机中负责读取指令、对指令译码，并执行指令的核心部件。</p>\n</li>\n<li>\n<p>显卡：显卡是计算机最基本、最重要的配件之一，是数模信号转换的设备，承担着输出和显示图形的任务。</p>\n</li>\n<li>\n<p>硬盘：是计算机最主要的存储设备。</p>\n</li>\n</ul>\n",
+            "tags": [
+                "计算机基础"
+            ]
+        }
+    ]
+}

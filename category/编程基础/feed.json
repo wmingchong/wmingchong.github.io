@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "严于律己 宽以待人 • All posts by \"编程基础\" category",
+    "description": "",
+    "home_page_url": "https://wmingchong.github.io",
+    "items": [
+        {
+            "id": "https://wmingchong.github.io/2022/12/24/jichu/MarkDown/",
+            "url": "https://wmingchong.github.io/2022/12/24/jichu/MarkDown/",
+            "title": "Markdown使用指南",
+            "date_published": "2022-12-24T04:10:45.000Z",
+            "content_html": "<h1 id=\"markdown学习\"><a class=\"markdownIt-Anchor\" href=\"#markdown学习\">#</a> MarkDown 学习</h1>\n<h2 id=\"标题\"><a class=\"markdownIt-Anchor\" href=\"#标题\">#</a> 标题</h2>\n<h3 id=\"三级标题\"><a class=\"markdownIt-Anchor\" href=\"#三级标题\">#</a> 三级标题</h3>\n<h4 id=\"四级标题\"><a class=\"markdownIt-Anchor\" href=\"#四级标题\">#</a> 四级标题</h4>\n<p>层级标题的快捷方式由  <strong>#+ 空格 + 标题名称</strong>  表示，回车键显示。</p>\n<p>一级标题用一个 <strong>#</strong></p>\n<p>二级标题用两个 <strong>##</strong></p>\n<p>以此类推，Typora 最高只能由六个层级标题</p>\n<h2 id=\"字体\"><a class=\"markdownIt-Anchor\" href=\"#字体\">#</a> 字体</h2>\n<ul>\n<li>\n<ul>\n<li>严于律己，宽以待人 **</li>\n</ul>\n</li>\n</ul>\n<p><em>严于律己，宽以待人</em></p>\n<p><em><strong>严于律己，宽以待人</strong></em></p>\n<p><s>严于律己，宽以待人</s></p>\n<p>在两端加上 * 号，用一个 ***** 表示斜体；两个  ****** 表示黑体；三个 ******* 表示黑体和斜体的组合。</p>\n<p>在两端加上两个 <strong>~~</strong> 表示删除线</p>\n<h2 id=\"引用\"><a class=\"markdownIt-Anchor\" href=\"#引用\">#</a> 引用</h2>\n<blockquote>\n<p>好好学习，天天向上</p>\n</blockquote>\n<p>用英文状态的  <strong>&gt;+ 空格</strong>  表示</p>\n<h2 id=\"分割线\"><a class=\"markdownIt-Anchor\" href=\"#分割线\">#</a> 分割线</h2>\n<hr>\n<hr>\n<p>分割线有两种表示方式</p>\n<p>用三个 <strong>—</strong> 回车表示；用三个 ******* 回车表示</p>\n<h2 id=\"图片\"><a class=\"markdownIt-Anchor\" href=\"#图片\">#</a> 图片</h2>\n<p>![图片 1](C:\\Users\\HP\\Pictures\\Saved Pictures\\1.jpg)</p>\n<p>图片用  **![图片名] (图片路径) ** 来表示</p>\n<h2 id=\"超链接\"><a class=\"markdownIt-Anchor\" href=\"#超链接\">#</a> 超链接</h2>\n<p><a href=\"www.baidu.com\">点击跳转到百度</a></p>\n<p>超链接用 <strong>[文字] (超链接地址)</strong>  表示</p>\n<h2 id=\"列表\"><a class=\"markdownIt-Anchor\" href=\"#列表\">#</a> 列表</h2>\n<ol>\n<li>好好</li>\n<li>学习</li>\n</ol>\n<ul>\n<li>天天</li>\n<li>向上</li>\n</ul>\n<p>有序列表用  <strong>1. + 空格</strong> 表示</p>\n<p>无序列表用   <strong>- + 空格</strong> 表示</p>\n<h2 id=\"表格\"><a class=\"markdownIt-Anchor\" href=\"#表格\">#</a> 表格</h2>\n<p>名字 | 性别 | 年龄</p>\n<p>–|--|–|</p>\n<p>张三 | 男 | 12</p>\n<p>在源代码模式中将空格删除，退出源代码模式即可</p>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>性别</th>\n<th>年龄</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>张三</td>\n<td>男</td>\n<td>12</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"代码\"><a class=\"markdownIt-Anchor\" href=\"#代码\">#</a> 代码</h2>\n<figure class=\"highlight java\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"keyword\">public</span> <span class=\"keyword\">class</span> <span class=\"title class_\">Hello</span>&#123;</span><br><span class=\"line\">    <span class=\"keyword\">public</span> <span class=\"keyword\">static</span> <span class=\"keyword\">void</span> <span class=\"title function_\">main</span><span class=\"params\">(String[] args)</span></span><br><span class=\"line\">    &#123;</span><br><span class=\"line\">        System.out.println(<span class=\"string\">&quot;Hello World&quot;</span>)</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">&#125;</span><br></pre></td></tr></table></figure>\n<p>代码写法由  <strong>```</strong>  回车表示，也可以加上代码类型再回车。</p>\n<p><span class=\"exturl\" data-url=\"bWFpbHRvOmdpdEBnaXRodWIuY29t\">git@github.com</span>:wmingchong/wmignchong.github.io.git</p>\n",
+            "tags": [
+                "MarkDown基础"
+            ]
+        },
+        {
+            "id": "https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/",
+            "url": "https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/",
+            "title": "计算机基础",
+            "date_published": "2022-11-24T02:09:39.000Z",
+            "content_html": "<h1 id=\"计算机基础\"><a class=\"markdownIt-Anchor\" href=\"#计算机基础\">#</a> 计算机基础</h1>\n<h2 id=\"什么是计算机\"><a class=\"markdownIt-Anchor\" href=\"#什么是计算机\">#</a> 什么是计算机</h2>\n<ul>\n<li>Computer：全称电子计算机，俗称电脑</li>\n<li>能够按照程序运行，自动，高速处理海量数据的现代化智能电子设备</li>\n<li>由硬件和软件组成</li>\n<li>常见的有台式计算机，笔记本计算机，大型计算机</li>\n<li>广泛应用在：科学计算，数据处理，自动控制，计算机辅助设计，人工智能，网络等领域。</li>\n</ul>\n<h2 id=\"计算机硬件\"><a class=\"markdownIt-Anchor\" href=\"#计算机硬件\">#</a> 计算机硬件</h2>\n<ul>\n<li>\n<p>一些物理装置按照系统结构的要求构成一个有机整体为计算机软件提供物质基础</p>\n</li>\n<li>\n<p>计算机硬件组成：CPU、主板、内存、电源、主机箱、硬盘、显卡、键盘、鼠标、显示器等。</p>\n</li>\n<li>\n<p>CPU：是计算机中负责读取指令、对指令译码，并执行指令的核心部件。</p>\n</li>\n<li>\n<p>显卡：显卡是计算机最基本、最重要的配件之一，是数模信号转换的设备，承担着输出和显示图形的任务。</p>\n</li>\n<li>\n<p>硬盘：是计算机最主要的存储设备。</p>\n</li>\n</ul>\n",
+            "tags": [
+                "计算机基础"
+            ]
+        }
+    ]
+}

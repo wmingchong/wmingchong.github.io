@@ -1,0 +1,561 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="严于律己 宽以待人" href="https://wmingchong.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="严于律己 宽以待人" href="https://wmingchong.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="严于律己 宽以待人" href="https://wmingchong.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="MarkDown基础" />
+
+
+<link rel="canonical" href="https://wmingchong.github.io/2022/12/24/jichu/MarkDown/">
+
+
+
+  <title>
+Markdown使用指南 - 编程基础 |
+Stronger--W = 严于律己 宽以待人 = 没有什么事情是一蹴而就的，坚持不懈才能取得成功</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Markdown使用指南
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-24 12:10:45">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-24T12:10:45+08:00">2022-12-24</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Stronger--W</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/kr27dRgBJfOmvtP.png"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/xgG6JIYn7Qpuvs1.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/16/vImK8F6bil5MEBC.png"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/16/3KRrN8Z7fy6pPae.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/OzZSB8cJYQy3MwA.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/8efmVFhWLxBnNSO.png"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/jichu/" itemprop="item" rel="index" title="分类于 编程基础"><span itemprop="name">编程基础</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://wmingchong.github.io/2022/12/24/jichu/MarkDown/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="wmchong">
+    <meta itemprop="description" content="没有什么事情是一蹴而就的，坚持不懈才能取得成功, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="严于律己 宽以待人">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="markdown学习"><a class="markdownIt-Anchor" href="#markdown学习">#</a> MarkDown 学习</h1>
+<h2 id="标题"><a class="markdownIt-Anchor" href="#标题">#</a> 标题</h2>
+<h3 id="三级标题"><a class="markdownIt-Anchor" href="#三级标题">#</a> 三级标题</h3>
+<h4 id="四级标题"><a class="markdownIt-Anchor" href="#四级标题">#</a> 四级标题</h4>
+<p>层级标题的快捷方式由  <strong>#+ 空格 + 标题名称</strong>  表示，回车键显示。</p>
+<p>一级标题用一个 <strong>#</strong></p>
+<p>二级标题用两个 <strong>##</strong></p>
+<p>以此类推，Typora 最高只能由六个层级标题</p>
+<h2 id="字体"><a class="markdownIt-Anchor" href="#字体">#</a> 字体</h2>
+<ul>
+<li>
+<ul>
+<li>严于律己，宽以待人 **</li>
+</ul>
+</li>
+</ul>
+<p><em>严于律己，宽以待人</em></p>
+<p><em><strong>严于律己，宽以待人</strong></em></p>
+<p><s>严于律己，宽以待人</s></p>
+<p>在两端加上 * 号，用一个 ***** 表示斜体；两个  ****** 表示黑体；三个 ******* 表示黑体和斜体的组合。</p>
+<p>在两端加上两个 <strong>~~</strong> 表示删除线</p>
+<h2 id="引用"><a class="markdownIt-Anchor" href="#引用">#</a> 引用</h2>
+<blockquote>
+<p>好好学习，天天向上</p>
+</blockquote>
+<p>用英文状态的  <strong>&gt;+ 空格</strong>  表示</p>
+<h2 id="分割线"><a class="markdownIt-Anchor" href="#分割线">#</a> 分割线</h2>
+<hr>
+<hr>
+<p>分割线有两种表示方式</p>
+<p>用三个 <strong>—</strong> 回车表示；用三个 ******* 回车表示</p>
+<h2 id="图片"><a class="markdownIt-Anchor" href="#图片">#</a> 图片</h2>
+<p>![图片 1](C:\Users\HP\Pictures\Saved Pictures\1.jpg)</p>
+<p>图片用  **![图片名] (图片路径) ** 来表示</p>
+<h2 id="超链接"><a class="markdownIt-Anchor" href="#超链接">#</a> 超链接</h2>
+<p><a href="www.baidu.com">点击跳转到百度</a></p>
+<p>超链接用 <strong>[文字] (超链接地址)</strong>  表示</p>
+<h2 id="列表"><a class="markdownIt-Anchor" href="#列表">#</a> 列表</h2>
+<ol>
+<li>好好</li>
+<li>学习</li>
+</ol>
+<ul>
+<li>天天</li>
+<li>向上</li>
+</ul>
+<p>有序列表用  <strong>1. + 空格</strong> 表示</p>
+<p>无序列表用   <strong>- + 空格</strong> 表示</p>
+<h2 id="表格"><a class="markdownIt-Anchor" href="#表格">#</a> 表格</h2>
+<p>名字 | 性别 | 年龄</p>
+<p>–|--|–|</p>
+<p>张三 | 男 | 12</p>
+<p>在源代码模式中将空格删除，退出源代码模式即可</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>性别</th>
+<th>年龄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张三</td>
+<td>男</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码">#</a> 代码</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span></span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>代码写法由  <strong>```</strong>  回车表示，也可以加上代码类型再回车。</p>
+<p><span class="exturl" data-url="bWFpbHRvOmdpdEBnaXRodWIuY29t">git@github.com</span>:wmingchong/wmignchong.github.io.git</p>
+
+      <div class="tags">
+          <a href="/tags/MarkDown%E5%9F%BA%E7%A1%80/" rel="tag"><i class="ic i-tag"></i> MarkDown基础</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-18 13:08:40" itemprop="dateModified" datetime="2023-03-18T13:08:40+08:00">2023-03-18</time>
+  </span>
+  <span id="2022/12/24/jichu/MarkDown/" class="item leancloud_visitors" data-flag-title="Markdown使用指南" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="wmchong 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="wmchong 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="wmchong 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>wmchong <i class="ic i-at"><em>@</em></i>严于律己 宽以待人
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://wmingchong.github.io/2022/12/24/jichu/MarkDown/" title="Markdown使用指南">https://wmingchong.github.io/2022/12/24/jichu/MarkDown/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2023&#x2F;03&#x2F;18&#x2F;QE8H7KxjCJpVqF3.jpg" title="计算机基础">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 编程基础</span>
+  <h3>计算机基础</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2023/02/21/suibi/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2023&#x2F;03&#x2F;18&#x2F;w3TMN6IgJrZ4xFe.png" title="随笔">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 随笔</span>
+  <h3>随笔</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text"> MarkDown 学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text"> 标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.1.1.</span> <span class="toc-text"> 四级标题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">1.2.</span> <span class="toc-text"> 字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text"> 引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">1.4.</span> <span class="toc-text"> 分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">1.5.</span> <span class="toc-text"> 图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-number">1.6.</span> <span class="toc-text"> 超链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.7.</span> <span class="toc-text"> 列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.8.</span> <span class="toc-text"> 表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">1.9.</span> <span class="toc-text"> 代码</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="bookmark" title="计算机基础">计算机基础</a></li><li class="active"><a href="/2022/12/24/jichu/MarkDown/" rel="bookmark" title="Markdown使用指南">Markdown使用指南</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="wmchong"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">wmchong</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">5</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">4</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">5</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dtaW5nY2hvbmc=" title="https:&#x2F;&#x2F;github.com&#x2F;wmingchong"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvbXkvbS9tdXNpYy9wbGF5bGlzdD9pZD0yNzk0NjMwOTg3" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;my&#x2F;m&#x2F;music&#x2F;playlist?id&#x3D;2794630987"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOncyMDEyMjljQDE2My5jb20=" title="mailto:w201229c@163.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2023/02/21/suibi/hello-world/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/suibi/" title="分类于 随笔">随笔</a>
+</div>
+
+    <span><a href="/2023/02/21/suibi/hello-world/" title="随笔">随笔</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/qita/" title="分类于 其他">其他</a>
+</div>
+
+    <span><a href="/2023/02/23/qita/hello-world/" title="其他">其他</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/BigData/" title="分类于 大数据">大数据</a>
+</div>
+
+    <span><a href="/2023/02/23/BigData/java%E5%9F%BA%E7%A1%80/" title="Java基础语法">Java基础语法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/jichu/" title="分类于 编程基础">编程基础</a>
+</div>
+
+    <span><a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" title="计算机基础">计算机基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/jichu/" title="分类于 编程基础">编程基础</a>
+</div>
+
+    <span><a href="/2022/12/24/jichu/MarkDown/" title="Markdown使用指南">Markdown使用指南</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">wmchong @ Stronger--W</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/12/24/jichu/MarkDown/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

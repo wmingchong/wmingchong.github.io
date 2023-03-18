@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wmingchong.github.io</id>
+    <title>严于律己 宽以待人 • Posts by &#34;计算机基础&#34; tag</title>
+    <link href="https://wmingchong.github.io" />
+    <updated>2022-11-24T02:09:39.000Z</updated>
+    <category term="Java基础" />
+    <category term="MarkDown基础" />
+    <category term="嗷嗷" />
+    <category term="哈哈" />
+    <category term="计算机基础" />
+    <entry>
+        <id>https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/</id>
+        <title>计算机基础</title>
+        <link rel="alternate" href="https://wmingchong.github.io/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+        <content type="html">&lt;h1 id=&#34;计算机基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算机基础&#34;&gt;#&lt;/a&gt; 计算机基础&lt;/h1&gt;
+&lt;h2 id=&#34;什么是计算机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是计算机&#34;&gt;#&lt;/a&gt; 什么是计算机&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer：全称电子计算机，俗称电脑&lt;/li&gt;
+&lt;li&gt;能够按照程序运行，自动，高速处理海量数据的现代化智能电子设备&lt;/li&gt;
+&lt;li&gt;由硬件和软件组成&lt;/li&gt;
+&lt;li&gt;常见的有台式计算机，笔记本计算机，大型计算机&lt;/li&gt;
+&lt;li&gt;广泛应用在：科学计算，数据处理，自动控制，计算机辅助设计，人工智能，网络等领域。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;计算机硬件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算机硬件&#34;&gt;#&lt;/a&gt; 计算机硬件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一些物理装置按照系统结构的要求构成一个有机整体为计算机软件提供物质基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算机硬件组成：CPU、主板、内存、电源、主机箱、硬盘、显卡、键盘、鼠标、显示器等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CPU：是计算机中负责读取指令、对指令译码，并执行指令的核心部件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;显卡：显卡是计算机最基本、最重要的配件之一，是数模信号转换的设备，承担着输出和显示图形的任务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;硬盘：是计算机最主要的存储设备。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="计算机基础" />
+        <updated>2022-11-24T02:09:39.000Z</updated>
+    </entry>
+</feed>
