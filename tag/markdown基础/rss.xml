@@ -9,9 +9,9 @@
         <lastBuildDate>Sat, 24 Dec 2022 12:10:45 +0800</lastBuildDate>
         <category>Java基础</category>
         <category>MarkDown基础</category>
-        <category>嗷嗷</category>
-        <category>哈哈</category>
         <category>计算机基础</category>
+        <category>哈哈</category>
+        <category>嗷嗷</category>
         <item>
             <guid isPermalink="true">https://wmingchong.github.io/2022/12/24/jichu/MarkDown/</guid>
             <title>Markdown使用指南</title>
@@ -27,13 +27,7 @@
 &lt;p&gt;二级标题用两个 &lt;strong&gt;##&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;以此类推，Typora 最高只能由六个层级标题&lt;/p&gt;
 &lt;h2 id=&#34;字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字体&#34;&gt;#&lt;/a&gt; 字体&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;严于律己，宽以待人 **&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;严于律己，宽以待人&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;严于律己，宽以待人&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;严于律己，宽以待人&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;严于律己，宽以待人&lt;/s&gt;&lt;/p&gt;
