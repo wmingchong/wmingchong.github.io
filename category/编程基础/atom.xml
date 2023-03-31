@@ -4,11 +4,13 @@
     <title>严于律己 宽以待人 • Posts by &#34;编程基础&#34; category</title>
     <link href="https://wmingchong.github.io" />
     <updated>2022-12-24T04:10:45.000Z</updated>
-    <category term="Java基础" />
+    <category term="大数据技术" />
+    <category term="容器技术" />
     <category term="MarkDown基础" />
     <category term="计算机基础" />
     <category term="哈哈" />
-    <category term="嗷嗷" />
+    <category term="SQL" />
+    <category term="推荐系统" />
     <entry>
         <id>https://wmingchong.github.io/2022/12/24/jichu/MarkDown/</id>
         <title>Markdown使用指南</title>
@@ -26,7 +28,7 @@
 &lt;p&gt;&lt;em&gt;严于律己，宽以待人&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;严于律己，宽以待人&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;严于律己，宽以待人&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;在两端加上 * 号，用一个 ***** 表示斜体；两个  ****** 表示黑体；三个 ******* 表示黑体和斜体的组合。&lt;/p&gt;
+&lt;p&gt;在两端加上 * 号，用一个 * 表示斜体；两个  * 表示黑体；三个 *** 表示黑体和斜体的组合。&lt;/p&gt;
 &lt;p&gt;在两端加上两个 &lt;strong&gt;~~&lt;/strong&gt; 表示删除线&lt;/p&gt;
 &lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -37,10 +39,10 @@
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;p&gt;分割线有两种表示方式&lt;/p&gt;
-&lt;p&gt;用三个 &lt;strong&gt;—&lt;/strong&gt; 回车表示；用三个 ******* 回车表示&lt;/p&gt;
+&lt;p&gt;用三个 &lt;strong&gt;—&lt;/strong&gt; 回车表示；用三个 *** 回车表示&lt;/p&gt;
 &lt;h2 id=&#34;图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h2&gt;
-&lt;p&gt;![图片 1](C:\Users\HP\Pictures\Saved Pictures\1.jpg)&lt;/p&gt;
-&lt;p&gt;图片用  **![图片名] (图片路径) ** 来表示&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;E:%5Cmodule%5CGit%5Csource_posts%5Cjichu%5C%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%5CMarkDown%5Cwallhaven-weeqzx.jpg&#34; alt=&#34;no1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图片用  &lt;strong&gt;![图片名] (图片路径)&lt;/strong&gt; 来表示&lt;/p&gt;
 &lt;h2 id=&#34;超链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#超链接&#34;&gt;#&lt;/a&gt; 超链接&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;www.baidu.com&#34;&gt;点击跳转到百度&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;超链接用 &lt;strong&gt;[文字] (超链接地址)&lt;/strong&gt;  表示&lt;/p&gt;

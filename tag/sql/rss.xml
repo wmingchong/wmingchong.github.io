@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>严于律己 宽以待人 • Posts by &#34;sql&#34; tag</title>
+        <link>https://wmingchong.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 12 Feb 2023 09:08:12 +0800</pubDate>
+        <lastBuildDate>Sun, 12 Feb 2023 09:08:12 +0800</lastBuildDate>
+        <category>大数据技术</category>
+        <category>容器技术</category>
+        <category>MarkDown基础</category>
+        <category>计算机基础</category>
+        <category>哈哈</category>
+        <category>SQL</category>
+        <category>推荐系统</category>
+        <item>
+            <guid isPermalink="true">https://wmingchong.github.io/2023/02/12/qita/SQL%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E5%87%BD%E6%95%B0/</guid>
+            <title>SQL关键字和函数</title>
+            <link>https://wmingchong.github.io/2023/02/12/qita/SQL%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E5%87%BD%E6%95%B0/</link>
+            <category>SQL</category>
+            <pubDate>Sun, 12 Feb 2023 09:08:12 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;sql关键字以及函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql关键字以及函数&#34;&gt;#&lt;/a&gt; SQL 关键字以及函数&lt;/h3&gt;
+&lt;h4 id=&#34;sql中的开窗口函数over&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql中的开窗口函数over&#34;&gt;#&lt;/a&gt; SQL 中的开窗口函数 OVER ()&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;定义&lt;/strong&gt;：OVER 用于为行定义一个窗口，它对一组值进行操作，不需要使用 GROUP BY 子句对数据进行分组，能够在同一行中同时返回基础行的列和聚合列。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;语法&lt;/strong&gt;：OVER ([ PARTITION BY column] [ ORDER BY culumn ] )&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;用法&lt;/strong&gt;：OVER 开窗函数必须与聚合函数或排序函数一起使用，聚合函数一般指 SUM (),MAX (),MIN,COUNT (),AVG () 等常见函数。排序函数一般指 RANK (),ROW_NUMBER (),DENSE_RANK (),NTILE () 等。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;拓展&lt;/strong&gt;：PARTITION BY 子句进行分组；ORDER BY 子句进行排序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;sql中的窗口函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql中的窗口函数&#34;&gt;#&lt;/a&gt; SQL 中的窗口函数&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;first_value： 用来返回一个分组窗口里的第一行记录，也即排名第一的那行记录。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;last_value： 和 first_value 相反，用来返回分组窗口里的最后一行记录，也即倒数第一的那行记录。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nth_value： 用来返回分组内指定行的记录。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ntile： 用来在分组内继续二次分组。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ROW_NUMBER ()：当前行在其分组内的序号。不管其排序结果中是否出现重复值。其排序结果都为：1,2.3.4.5.。顺序排序 ——1、2、3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DENSE_RANK ()：不间断的组内排序。使用这个函数时，可以出现 1.1.2.2 这种形式的分组。并列排序，不跳过重复序号 ——1、1、2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RANK ()：间断的组内排序。其排序结果可能出现如下结果：1.1.3.4.4.6。并列排序，跳过重复序号 ——1、1、3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;sql中的日期函数date_add&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql中的日期函数date_add&#34;&gt;#&lt;/a&gt; SQL 中的日期函数 DATE_ADD ()&lt;/h4&gt;
+&lt;p&gt;date_add ()：常常用户在 mysql 的 sql 中实现对日期类型的操作，比如增加或者减少，但是不改变原来的数据，只是对查询的数据做处理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语法：DATE_ADD (date,INTERVAL expr unit)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 得到当前时间增加1天的结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; date_add(now(),&lt;span class=&#34;type&#34;&gt;interval&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;day&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 得到当前时间减少72个小时的结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; date_add(now(),&lt;span class=&#34;type&#34;&gt;interval&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;-72&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;hour&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;sql中的union&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql中的union&#34;&gt;#&lt;/a&gt; SQL 中的 union&lt;/h4&gt;
+&lt;p&gt;作用：将两张毫不相干的表的查询结果拼接在一起输出，前提是两个查询的列数要相同。&lt;/p&gt;
+&lt;h4 id=&#34;sql中的round&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql中的round&#34;&gt;#&lt;/a&gt; SQL 中的 ROUND ()&lt;/h4&gt;
+&lt;p&gt;round () 函数用于把&lt;strong&gt;数值字段&lt;/strong&gt;舍入为指定的小数位数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语法：SELECT ROUND (column_name,decimals) FROM [表名]&lt;/p&gt;
+&lt;p&gt;column_name: 要舍入的字段，必需&lt;/p&gt;
+&lt;p&gt;decimals: 规定要返回的小数位数，可选&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- ROUND(X)函数将值X四舍五入之后保留整数部分&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- -7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; ROUND(&lt;span class=&#34;number&#34;&gt;-6.6&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 1100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; ROUND(&lt;span class=&#34;number&#34;&gt;1123.26723&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;-2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 1000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; ROUND(&lt;span class=&#34;number&#34;&gt;1123.26723&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;-3&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 根据参数D值，将参数X四舍五入后得到保留小数点后D位的值，X值的小数位不够D位的补零&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 如果D为负值，则保留小数点左边D位，先进行四舍五入操作，再将相应的位数值取零&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- -6.7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; ROUND(&lt;span class=&#34;number&#34;&gt;-6.66&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;sql中的日期格式化函数date_format&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql中的日期格式化函数date_format&#34;&gt;#&lt;/a&gt; SQL 中的日期格式化函数 date_format ()&lt;/h4&gt;
+&lt;p&gt;date_format 函数用于格式化日期字段。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语法：DATE_FORMAT (date, format)&lt;/p&gt;
+&lt;p&gt;date 为日期字段，format 为格式化字符串。常用的格式化字符有 % Y、% m、% d 等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 这将返回日期字段按照“年-月-日”格式格式化后的结果。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SELECT&lt;/span&gt; DATE_FORMAT(date_field, &lt;span class=&#34;string&#34;&gt;&amp;#x27;%Y-%m-%d&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 需要注意的是，在使用 date_format 函数时，date 字段需要是日期类型的，如果是字符串类型的日期需要使用str_to_date函数转换成日期类型。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; DATE_FORMAT(str_to_date(&lt;span class=&#34;string&#34;&gt;&amp;#x27;2022-10-01&amp;#x27;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;#x27;%Y-%m-%d&amp;#x27;&lt;/span&gt;),&lt;span class=&#34;string&#34;&gt;&amp;#x27;%Y-%m-%d %T&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;-- 这将返回字符串类型 &amp;#x27;2022-10-01&amp;#x27; 转换成日期类型后的结果，并按照 &amp;#x27;%Y-%m-%d %T&amp;#x27;格式输出。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

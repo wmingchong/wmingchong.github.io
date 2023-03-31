@@ -1,0 +1,617 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="严于律己 宽以待人" href="https://wmingchong.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="严于律己 宽以待人" href="https://wmingchong.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="严于律己 宽以待人" href="https://wmingchong.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="容器技术" />
+
+
+<link rel="canonical" href="https://wmingchong.github.io/2022/12/23/BigData/docker/">
+
+
+
+  <title>
+Docker - 大数据 |
+Stronger--W = 严于律己 宽以待人 = 没有什么事情是一蹴而就的，坚持不懈才能取得成功</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Docker
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-23 15:08:24">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-23T15:08:24+08:00">2022-12-23</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>4.1k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Stronger--W</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/kqlz8XsHM9G5YRh.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/I5OcUXEKf3zVFLq.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/DHJICfMuO9RX8L4.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/JnhWoV6XS5QcNdG.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/CjyRtdLDbgzWunk.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2023/03/18/8efmVFhWLxBnNSO.png"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/BigData/" itemprop="item" rel="index" title="分类于 大数据"><span itemprop="name">大数据</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://wmingchong.github.io/2022/12/23/BigData/docker/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="wmchong">
+    <meta itemprop="description" content="没有什么事情是一蹴而就的，坚持不懈才能取得成功, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="严于律己 宽以待人">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="docker"><a class="markdownIt-Anchor" href="#docker">#</a> Docker</h2>
+<p>容器化技术</p>
+<ul>
+<li>1、基础镜像 MB 级别</li>
+<li>创建简单</li>
+<li>隔离性强</li>
+<li>启动速度秒级</li>
+<li>移植与分享</li>
+</ul>
+<h2 id="安装docker"><a class="markdownIt-Anchor" href="#安装docker">#</a> 安装 Docker</h2>
+<h2 id="1centos下安装docker"><a class="markdownIt-Anchor" href="#1centos下安装docker">#</a> 1.Centos 下安装 docker</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL2luc3RhbGwvY2VudG9zLw==">其它系统安装参考</span></p>
+<h3 id="1如果有请移除以前的docker相关包"><a class="markdownIt-Anchor" href="#1如果有请移除以前的docker相关包">#</a> 1. 如果有，请移除以前的 docker 相关包</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine</span><br></pre></td></tr></table></figure>
+<p>此过程是需要在 root 权限下进行，如果已经是 root 权限可不用 sudo, 后面的命令也是如此</p>
+<h3 id="2配置yum源"><a class="markdownIt-Anchor" href="#2配置yum源">#</a> 2. 配置 yum 源</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">--add-repo \</span><br><span class="line">http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br></pre></td></tr></table></figure>
+<h3 id="3安装docker"><a class="markdownIt-Anchor" href="#3安装docker">#</a> 3. 安装 docker</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure>
+<p>如果此过程提示‘No package docker-ce available’，请参考<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3RhbndlaTAxMDkxNS9hcnRpY2xlL2RldGFpbHMvMTIzNjI5MDk2">这篇博客</span></p>
+<h3 id="4启动docker"><a class="markdownIt-Anchor" href="#4启动docker">#</a> 4. 启动 Docker</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> docker --now</span><br></pre></td></tr></table></figure>
+<h3 id="5配置镜像下载加速"><a class="markdownIt-Anchor" href="#5配置镜像下载加速">#</a> 5. 配置镜像下载加速</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#x27;EOF&#x27;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://lmccrgeo.mirror.aliyuncs.com&quot;],</span><br><span class="line">  &quot;exec-opts&quot;: [&quot;native.cgroupdriver=systemd&quot;],</span><br><span class="line">  &quot;log-driver&quot;: &quot;json-file&quot;,</span><br><span class="line">  &quot;log-opts&quot;: &#123;</span><br><span class="line">    &quot;max-size&quot;: &quot;100m&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;storage-driver&quot;: &quot;overlay2&quot;</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+<p>其中 &quot;registry-mirrors&quot; 的参数可设置为自己的加速地址，在个人阿里云的<strong>容器与镜像服务</strong>中查看<strong>镜像加速器地址</strong>。echo “172.31.0.2  cluster-endpoint” &gt;&gt; /etc/hosts</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">kubeadm init \</span><br><span class="line">--apiserver-advertise-address=172.31.0.2 \</span><br><span class="line">--control-plane-endpoint=cluster-endpoint \</span><br><span class="line">--image-repository registry.cn-hangzhou.aliyuncs.com/lfy_k8s_images \</span><br><span class="line">--kubernetes-version v1.20.9 \</span><br><span class="line">--service-cidr=10.96.0.0/16 \</span><br><span class="line">--pod-network-cidr=192.168.0.0/16</span><br></pre></td></tr></table></figure>
+<h2 id="docker基本操作"><a class="markdownIt-Anchor" href="#docker基本操作">#</a> Docker 基本操作</h2>
+<h3 id="1拉镜像"><a class="markdownIt-Anchor" href="#1拉镜像">#</a> 1. 拉镜像</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 镜像名:版本号，不写版本号默认最新版，即latest</span></span><br><span class="line">docker pull nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有镜像</span></span><br><span class="line">docker images</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除镜像</span></span><br><span class="line">docker rmi 镜像名/ID</span><br></pre></td></tr></table></figure>
+<p>也可以在<span class="exturl" data-url="aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItaHViLw=="> DockerHub</span> 里面找自己需要的镜像。</p>
+<h3 id="2启动容器"><a class="markdownIt-Anchor" href="#2启动容器">#</a> 2. 启动容器</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动一个容器</span></span><br><span class="line">docker run [OPTIONS] IMAGE [COMMAND] [ARG...]</span><br><span class="line"></span><br><span class="line"><span class="comment">#一些简单参数：-d：后台运行 --name:命名 --restart=always：开机自启  -p：端口映射(ps:主机的88端口映射到容器80端口 88:80)</span></span><br><span class="line">docker run -d --name dock --restart always 88:80 nginx</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看正在运行的容器</span></span><br><span class="line">docker ps</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有容器</span></span><br><span class="line">docker ps -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止容器</span></span><br><span class="line">docker stop 容器<span class="built_in">id</span>/名字</span><br><span class="line"></span><br><span class="line"><span class="comment">#再次启动</span></span><br><span class="line">docker start 容器<span class="built_in">id</span>/名字</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除停止的容器，若要强制删除加 -f</span></span><br><span class="line">docker <span class="built_in">rm</span> 容器名/ID</span><br><span class="line">docker <span class="built_in">rm</span> -f 容器名/ID</span><br><span class="line"></span><br><span class="line"><span class="comment">#应用开机自启</span></span><br><span class="line">docker update 容器<span class="built_in">id</span>/名字 --restart=always</span><br></pre></td></tr></table></figure>
+<h3 id="3页面修改"><a class="markdownIt-Anchor" href="#3页面修改">#</a> 3. 页面修改</h3>
+<ul>
+<li>进入容器内修改</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进入容器内部，修改内容  -it：运行交互命令</span></span><br><span class="line">docker <span class="built_in">exec</span> -it 容器名/id</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以Nginx为例</span></span><br><span class="line"><span class="comment">#进入文件夹</span></span><br><span class="line"><span class="built_in">cd</span> usr/share/nginx/html/</span><br><span class="line"><span class="comment"># 修改页面内容， &gt; 是覆盖：将里面内容覆盖；&gt;&gt; 追加：在里面的内容基础上追加</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;&lt;h1&gt;Welcome come to Chongqing&lt;/h1&gt;&quot;</span> &gt; index.html</span><br><span class="line"><span class="comment"># 查看index.html的内容</span></span><br><span class="line"><span class="built_in">cat</span> index.html</span><br></pre></td></tr></table></figure>
+<ul>
+<li>挂载数据卷到外部修改</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 挂载 -v 主机地址:容器地址 :ro表示只能在容器里进行读操作； :rw 可以进行写操作</span></span><br><span class="line">docker run -d --name gugu -p 88:80 -v /data/html:/usr/share/nginx/html:ro nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果主机文件目录为空，容器也为空</span></span><br><span class="line"><span class="comment"># 挂载完成后，如果需要修改内容直接到主机的 /data/html 下修改即可</span></span><br></pre></td></tr></table></figure>
+<h3 id="4提交内容创建自己的镜像"><a class="markdownIt-Anchor" href="#4提交内容创建自己的镜像">#</a> 4. 提交内容（创建自己的镜像）</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># -a :提交的镜像作者； -c :使用Dockerfile指令来创建镜像； -m :提交时的说明文字； -p :在commit时，将容器暂停。</span></span><br><span class="line">docker commit -a <span class="string">&quot;wmc&quot;</span> -m <span class="string">&quot;首页变化&quot;</span> 24f36308a38a wnginx:v1.0</span><br></pre></td></tr></table></figure>
+<h3 id="5镜像传输"><a class="markdownIt-Anchor" href="#5镜像传输">#</a> 5. 镜像传输</h3>
+<ul>
+<li>压缩包传输</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">####压缩包传输######</span></span><br><span class="line"><span class="comment">#将镜像保存成压缩包  -o :输出到的文件</span></span><br><span class="line">docker save [OPTIONS] IMAGE [IMAGE...]</span><br><span class="line">docker save -o abc.tar wnginx:v1.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将镜像传输给其他机器 </span></span><br><span class="line">scp abc.tar 其他机器地址</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在其他机器上加载  -i : 指定导入的文件，代替 STDIN； -q : 精简输出信息。</span></span><br><span class="line">docker load [OPTIONS]</span><br><span class="line">docker load -i abc.atr</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>远程推送到仓库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">####远程推送到仓库######</span></span><br><span class="line"><span class="comment"># 将旧镜像名改成需要推送到仓库要求的名称</span></span><br><span class="line">docker tag wnginx:v1.0 wmchong/wmc:v1.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 登录到docker hub（没有需要在网页注册）</span></span><br><span class="line">docker login</span><br><span class="line">docker <span class="built_in">logout</span> <span class="comment"># 推送完后退出</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送</span></span><br><span class="line">docker push wmchong/wmc:v1.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在其他机器使用命令拉取镜像</span></span><br><span class="line">docker pull wmchong/wmc:v1.0</span><br></pre></td></tr></table></figure>
+<h3 id="6其他命令"><a class="markdownIt-Anchor" href="#6其他命令">#</a> 6. 其他命令</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run --<span class="built_in">help</span>  <span class="comment"># 可以使用--help，查看帮助文档</span></span><br><span class="line">docker <span class="built_in">log</span> 容器名/ID  <span class="comment"># 查看日志，排错</span></span><br><span class="line">docker <span class="built_in">cp</span> 95e332b7f4b1:/etc/nginx/nginx.conf /data/conf/nginx.conf  <span class="comment"># 将内容进行复制</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## docker 修改配置文件，用挂载的方法</span></span><br><span class="line">docker run -d -p 80:80 -v /data/html:/usr/share/nginx/html:ro -v /data/conf/nginx.conf:/etc/nginx/nginx.conf:ro --name chong nginx</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># redis使用自定义配置文件启动</span></span><br><span class="line">docker run \</span><br><span class="line">-v /data/redis/redis.conf:/etc/redis/redis.conf \</span><br><span class="line">-v /data/redis/data:/data \</span><br><span class="line">-d --name myredis \</span><br><span class="line">-p 6379:6379 \</span><br><span class="line">redis redis-server /etc/redis/redis.conf</span><br></pre></td></tr></table></figure>
+<h2 id="应用打包-dockerfile"><a class="markdownIt-Anchor" href="#应用打包-dockerfile">#</a> 应用打包 - DockerFile</h2>
+<h3 id="1-以前"><a class="markdownIt-Anchor" href="#1-以前">#</a> 1、以前</h3>
+<p>Java 为例</p>
+<ul>
+<li>SpringBoot 打包成可执行 jar</li>
+<li>把 jar 包上传给服务</li>
+<li>服务器运行 java -jar</li>
+</ul>
+<h3 id="2现在"><a class="markdownIt-Anchor" href="#2现在">#</a> 2. 现在</h3>
+<p>编写 Dockerfile</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> openjdk:<span class="number">8</span>-jdk-slim  <span class="comment"># 基础运行环境</span></span><br><span class="line"><span class="keyword">LABEL</span><span class="language-bash"> maintainer=wmchong  <span class="comment"># 作者</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> target/*.jar  /app.jar </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="language-bash"> [<span class="string">&quot;java&quot;</span>,<span class="string">&quot;-jar&quot;</span>,<span class="string">&quot;/app.jar&quot;</span>]  <span class="comment"># 镜像的启动命令</span></span></span><br></pre></td></tr></table></figure>
+<p>构建镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t java-demo2:v1.0 .</span><br></pre></td></tr></table></figure>
+<p>启动容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8080:8080 --name chong java-demo2:v1.0</span><br></pre></td></tr></table></figure>
+<p>上传镜像到 dockerhub 仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 登录docker hub</span></span><br><span class="line">docker login</span><br><span class="line"></span><br><span class="line"><span class="comment">#给旧镜像起名</span></span><br><span class="line">docker tag java-demo2:v1.0  wmchong/java-demo:v1.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送到docker hub</span></span><br><span class="line">docker push wmchong/java-demo:v1.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 别的机器</span></span><br><span class="line">docker pull wmchong/java-demo:v1.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 别的机器运行</span></span><br><span class="line">docker run -d -p 8080:8080 --name myjava-app java-demo:v1.0 </span><br></pre></td></tr></table></figure>
+
+      <div class="tags">
+          <a href="/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/" rel="tag"><i class="ic i-tag"></i> 容器技术</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-31 11:05:50" itemprop="dateModified" datetime="2023-03-31T11:05:50+08:00">2023-03-31</time>
+  </span>
+  <span id="2022/12/23/BigData/docker/" class="item leancloud_visitors" data-flag-title="Docker" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="wmchong 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="wmchong 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>wmchong <i class="ic i-at"><em>@</em></i>严于律己 宽以待人
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://wmingchong.github.io/2022/12/23/BigData/docker/" title="Docker">https://wmingchong.github.io/2022/12/23/BigData/docker/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2023&#x2F;03&#x2F;18&#x2F;nk5hvz892JZFQWu.jpg" title="计算机基础">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 编程基础</span>
+  <h3>计算机基础</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2022/12/23/BigData/k8s/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2023&#x2F;03&#x2F;18&#x2F;QE8H7KxjCJpVqF3.jpg" title="Kubernetes">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 大数据</span>
+  <h3>Kubernetes</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker"><span class="toc-number">1.</span> <span class="toc-text"> Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85docker"><span class="toc-number">2.</span> <span class="toc-text"> 安装 Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1centos%E4%B8%8B%E5%AE%89%E8%A3%85docker"><span class="toc-number">3.</span> <span class="toc-text"> 1.Centos 下安装 docker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E5%A6%82%E6%9E%9C%E6%9C%89%E8%AF%B7%E7%A7%BB%E9%99%A4%E4%BB%A5%E5%89%8D%E7%9A%84docker%E7%9B%B8%E5%85%B3%E5%8C%85"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 如果有，请移除以前的 docker 相关包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E9%85%8D%E7%BD%AEyum%E6%BA%90"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 配置 yum 源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E5%AE%89%E8%A3%85docker"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 安装 docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E5%90%AF%E5%8A%A8docker"><span class="toc-number">3.4.</span> <span class="toc-text"> 4. 启动 Docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F"><span class="toc-number">3.5.</span> <span class="toc-text"> 5. 配置镜像下载加速</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text"> Docker 基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E6%8B%89%E9%95%9C%E5%83%8F"><span class="toc-number">4.1.</span> <span class="toc-text"> 1. 拉镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-number">4.2.</span> <span class="toc-text"> 2. 启动容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E9%A1%B5%E9%9D%A2%E4%BF%AE%E6%94%B9"><span class="toc-number">4.3.</span> <span class="toc-text"> 3. 页面修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E6%8F%90%E4%BA%A4%E5%86%85%E5%AE%B9%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%95%9C%E5%83%8F"><span class="toc-number">4.4.</span> <span class="toc-text"> 4. 提交内容（创建自己的镜像）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E9%95%9C%E5%83%8F%E4%BC%A0%E8%BE%93"><span class="toc-number">4.5.</span> <span class="toc-text"> 5. 镜像传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4"><span class="toc-number">4.6.</span> <span class="toc-text"> 6. 其他命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85-dockerfile"><span class="toc-number">5.</span> <span class="toc-text"> 应用打包 - DockerFile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%A5%E5%89%8D"><span class="toc-number">5.1.</span> <span class="toc-text"> 1、以前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E7%8E%B0%E5%9C%A8"><span class="toc-number">5.2.</span> <span class="toc-text"> 2. 现在</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2022/12/23/BigData/docker/" rel="bookmark" title="Docker">Docker</a></li><li><a href="/2022/12/23/BigData/k8s/" rel="bookmark" title="Kubernetes">Kubernetes</a></li><li><a href="/2023/02/24/BigData/%E5%A4%A7%E6%95%B0%E6%8D%AE-shell/" rel="bookmark" title="大数据技术-Shell">大数据技术-Shell</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="wmchong"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">wmchong</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">8</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">4</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">7</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dtaW5nY2hvbmc=" title="https:&#x2F;&#x2F;github.com&#x2F;wmingchong"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvbXkvbS9tdXNpYy9wbGF5bGlzdD9pZD0yNzk0NjMwOTg3" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;my&#x2F;m&#x2F;music&#x2F;playlist?id&#x3D;2794630987"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOncyMDEyMjljQDE2My5jb20=" title="mailto:w201229c@163.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <span class="exturl" data-url="aHR0cHM6Ly9zdW5ib3lrYS5naXRodWIuaW8="><i class="ic i-heart"></i>友链</span>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>链接</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2022/12/23/BigData/k8s/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/suibi/" title="分类于 随笔">随笔</a>
+</div>
+
+    <span><a href="/2023/02/21/suibi/hello-world/" title="随笔">随笔</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/qita/" title="分类于 其他">其他</a>
+</div>
+
+    <span><a href="/2023/02/12/qita/SQL%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E5%87%BD%E6%95%B0/" title="SQL关键字和函数">SQL关键字和函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/BigData/" title="分类于 大数据">大数据</a>
+</div>
+
+    <span><a href="/2022/12/23/BigData/docker/" title="Docker">Docker</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/jichu/" title="分类于 编程基础">编程基础</a>
+</div>
+
+    <span><a href="/2022/12/24/jichu/MarkDown/" title="Markdown使用指南">Markdown使用指南</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/qita/" title="分类于 其他">其他</a>
+</div>
+
+    <span><a href="/2023/02/13/qita/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/" title="Lambda架构">Lambda架构</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/BigData/" title="分类于 大数据">大数据</a>
+</div>
+
+    <span><a href="/2022/12/23/BigData/k8s/" title="Kubernetes">Kubernetes</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/BigData/" title="分类于 大数据">大数据</a>
+</div>
+
+    <span><a href="/2023/02/24/BigData/%E5%A4%A7%E6%95%B0%E6%8D%AE-shell/" title="大数据技术-Shell">大数据技术-Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/jichu/" title="分类于 编程基础">编程基础</a>
+</div>
+
+    <span><a href="/2022/11/24/jichu/%E8%AE%A1%E7%AE%97%E6%9C%BA/" title="计算机基础">计算机基础</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">wmchong @ Stronger--W</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">36k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">32 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/12/23/BigData/docker/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

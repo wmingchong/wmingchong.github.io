@@ -7,11 +7,13 @@
         <language>zh-CN</language>
         <pubDate>Tue, 21 Feb 2023 10:12:45 +0800</pubDate>
         <lastBuildDate>Tue, 21 Feb 2023 10:12:45 +0800</lastBuildDate>
-        <category>Java基础</category>
+        <category>大数据技术</category>
+        <category>容器技术</category>
         <category>MarkDown基础</category>
         <category>计算机基础</category>
         <category>哈哈</category>
-        <category>嗷嗷</category>
+        <category>SQL</category>
+        <category>推荐系统</category>
         <item>
             <guid isPermalink="true">https://wmingchong.github.io/2023/02/21/suibi/hello-world/</guid>
             <title>随笔</title>
